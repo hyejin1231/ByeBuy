@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "386771230161",
+    "firebase_url": "https://byebuy-95a72.firebaseio.com",
+    "project_id": "byebuy-95a72",
+    "storage_bucket": "byebuy-95a72.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:386771230161:android:97c8a364c29bd83e7754f0",
+        "android_client_info": {
+          "package_name": "com.example.byebuy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "386771230161-fm47cj0q0dcnfq8mrtnjvcno7h1c6449.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.byebuy",
+            "certificate_hash": "9ffdb9956f5872bfb173a33505287aa52e12066e"
+          }
+        },
+        {
+          "client_id": "386771230161-cjs9972d94rnnvnsoqm9tej2qfvkjiph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhblFNZErKmk_acAiMd2lae6YsNqv7PSA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "386771230161-cjs9972d94rnnvnsoqm9tej2qfvkjiph.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
