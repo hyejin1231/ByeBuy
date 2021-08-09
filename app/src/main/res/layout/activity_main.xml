@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_main" />
+
+        <ImageView
+            android:id="@+id/img_btn_hotclick"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            app:layout_constraintEnd_toStartOf="@+id/img_btn_category"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/click" />
+
+        <ImageView
+            android:id="@+id/img_btn_category"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/categorymenu"
+            tools:srcCompat="@drawable/categorymenu" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/edit_SC_Search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="원하는 상품을 검색하세요."
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/img_SC_btnSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_SC_btnSearch"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/edit_SC_Search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:srcCompat="@drawable/search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/SCrecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="490dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner1" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SCrecyclerView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/img_SC_home"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/img_SC_btnWrite"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_SC_btnNotice"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_SC_btnNotice"
+            app:layout_constraintTop_toTopOf="@+id/img_SC_btnNotice"
+            app:layout_constraintVertical_bias="0.49"
+            app:srcCompat="@drawable/pencil" />
+
+        <ImageView
+            android:id="@+id/img_SC_btnMypage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_SC_btnChat"
+            app:layout_constraintEnd_toStartOf="@+id/img_SC_btnChat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/img_SC_btnChat"
+            app:srcCompat="@drawable/user" />
+
+
+        <ImageView
+            android:id="@+id/img_SC_btnNotice"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_SC_home"
+            app:layout_constraintEnd_toStartOf="@+id/img_SC_btnWrite"
+            app:layout_constraintStart_toEndOf="@+id/img_SC_home"
+            app:layout_constraintTop_toTopOf="@+id/img_SC_home"
+            app:layout_constraintVertical_bias="0.51"
+            app:srcCompat="@drawable/noticeboard" />
+
+        <ImageView
+            android:id="@+id/img_SC_btnChat"
+            android:layout_width="42dp"
+            android:layout_height="45dp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_SC_home"
+            app:layout_constraintEnd_toStartOf="@+id/img_SC_home"
+            app:layout_constraintStart_toEndOf="@+id/img_SC_btnMypage"
+            app:layout_constraintTop_toTopOf="@+id/img_SC_home"
+            app:srcCompat="@drawable/chat"></ImageView>
+
+        <TextView
+            android:id="@+id/textView62"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="홈"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/img_SC_home"
+            app:layout_constraintStart_toStartOf="@+id/img_SC_home"
+            app:layout_constraintTop_toBottomOf="@+id/img_SC_home" />
+
+        <TextView
+            android:id="@+id/textView63"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="채팅"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/img_SC_btnChat"
+            app:layout_constraintStart_toStartOf="@+id/img_SC_btnChat"
+            app:layout_constraintTop_toBottomOf="@+id/img_SC_btnChat" />
+
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="마이페이지"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/img_SC_btnMypage"
+            app:layout_constraintStart_toStartOf="@+id/img_SC_btnMypage"
+            app:layout_constraintTop_toBottomOf="@+id/img_SC_btnMypage" />
+
+        <TextView
+            android:id="@+id/textView65"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="공지사항"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/img_SC_btnNotice"
+            app:layout_constraintStart_toStartOf="@+id/img_SC_btnNotice"
+            app:layout_constraintTop_toBottomOf="@+id/img_SC_btnNotice" />
+
+        <TextView
+            android:id="@+id/textView66"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="물품등록"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/img_SC_btnWrite"
+            app:layout_constraintStart_toStartOf="@+id/img_SC_btnWrite"
+            app:layout_constraintTop_toBottomOf="@+id/img_SC_btnWrite" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_SC_Search" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
